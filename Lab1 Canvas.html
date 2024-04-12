@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gwiazda</title>
+<style>
+.star {
+margin: 50px ;
+display: block;
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 80px solid #ff0;
+position: relative;
+}
+.star::after {
+content: "";
+position: absolute;
+top: 25px;
+left: -50px;
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-top: 80px solid #ff0;
+}
+.smile {
+width: 30px;
+height: 12px;
+border: 2px solid black;
+border-top: none;
+border-radius: 0 0 50px 50px;
+position: absolute;
+top: 110px;
+left: 91px;
+margin: auto;
+}
+.eye {
+background-color: black;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+position: absolute;
+}
+.left-eye {
+top: 90px;
+left: 90px;
+}
+.right-eye {
+top: 90px;
+left: 114px;
+}
+</style>
+</head>
+<body>
+<div class="star"></div>
+<div class="smile"></div>
+<div class="eye left-eye"></div>
+<div class="eye right-eye"></div>
+</body>
+</html>
